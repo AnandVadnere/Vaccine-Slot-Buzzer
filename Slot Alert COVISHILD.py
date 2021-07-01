@@ -4,7 +4,9 @@ from datetime import datetime
 import time
 import sys
 from playsound import playsound
+import cgi 
 
+form = cgi.FieldStorage()
 ProdUrl = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?"
 
 headers = {'Accept': 'application/json',
